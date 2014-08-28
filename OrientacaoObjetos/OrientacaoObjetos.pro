@@ -14,9 +14,10 @@ CONFIG   -= app_bundle
 
 TEMPLATE = app
 
-
 SOURCES += main.cpp \
-    carro.cpp
+    ponto.cpp #\
+    #carro.cpp
 
 HEADERS += \
-    carro.h
+    ponto.h #\
+    #carro.h
