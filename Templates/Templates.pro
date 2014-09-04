@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2014-08-22T11:25:13
+# Project created by QtCreator 2014-09-04T09:35:54
 #
 #-------------------------------------------------
 
@@ -8,19 +8,17 @@ QT       += core
 
 QT       -= gui
 
-#QMAKE_CXXFLAGS += -std=c++11
-
-TARGET = OrientacaoObjetos
+TARGET = Templates
 CONFIG   += console
 CONFIG   -= app_bundle
 
+#DEFINES += QT_NO_DEBUG_OUTPUT
+#DEFINES += QT_NO_DEBUG
+
 TEMPLATE = app
 
-SOURCES += main.cpp \
-    ponto.cpp #\
-    #carro.cpp
+SOURCES += main.cpp
 
 HEADERS += \
-    ponto.h \ #\
-    Interface.h
-    #carro.h
+    Pair.h \
+    IPair.h

@@ -25,6 +25,22 @@ Ponto::Ponto(int x, int y):
 {
     filho = 0;
 }
+Ponto Ponto::operator +(const Ponto &other) const
+{
+    Ponto ret;
+//    m_x++;
+    ret.m_x = m_x + other.m_x;
+    ret.m_y = m_y + other.m_y;
+    //other.m_x = -1000;
+    return ret;
+}
+
+void Ponto::add(Ponto other)
+{
+    m_x += other.m_x;
+    m_y += other.m_y;
+}
+
 
 void Ponto::print()
 {
