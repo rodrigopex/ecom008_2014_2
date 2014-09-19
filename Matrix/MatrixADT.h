@@ -9,7 +9,7 @@ public:
     MatrixADT() {}          // Default constructor
     virtual ~MatrixADT() {} // Base destructor
 
-    // Determinante
+    /*// Determinante
     virtual E det() = 0;
 
     // Soma k a todos os elementos da matriz
@@ -20,12 +20,13 @@ public:
 
     // Retorna o elemento da coluna column e da linha row na matriz
     virtual E at(int column, int row) = 0;
-
+*/
     //Altera o conteudo completo da matriz
     virtual void setContent(E a00, E a01, E a10, E a11) = 0;
 
     //Altera o conteudo de uma posicao da matriz
-    virtual void setContentAt(int column, int row, E a) = 0;
+//    virtual void setContentAt(int column, int row, E a) = 0;
+    virtual void show() = 0;
 };
 
 #endif // MATRIXADT_H

@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2014-09-11T09:28:07
+# Project created by QtCreator 2014-09-19T08:15:45
 #
 #-------------------------------------------------
 
@@ -8,7 +8,7 @@ QT       += core
 
 QT       -= gui
 
-TARGET = Matrix
+TARGET = List101
 CONFIG   += console
 CONFIG   -= app_bundle
 
@@ -18,6 +18,6 @@ TEMPLATE = app
 SOURCES += main.cpp
 
 HEADERS += \
-    MatrixADT.h \
-    Matrix.h
-
+    Node.h \
+    list.h \
+    linkedlist.h
