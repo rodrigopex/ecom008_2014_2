@@ -19,6 +19,30 @@ public:
         }
         return 1 + qMax<int>(height(base->left), height(base->right));
     }
+    QString toString(Node *base, int height) {
+        if(base == 0) {
+            return "\n";
+        } else {
+            return QString("   ").repeated(height) +
+                    QString::number(base->content) +
+                    "     " +
+                    toString(base->left, height - 1) +
+                    toString(base->right, height - 1);
+        }
+    }
+    QString toStringH(Node *base, int height) {
+        if(base == 0) {
+            return "";
+        } else {
+            QString ret  =
+                    toStringH(base->left, height + 1) +
+                    QString("   ").repeated(height) +
+                                        QString::number(base->content) + "\n" +
+                    toStringH(base->right, height + 1);
+            return ret;
+        }
+    }
+
     void show(Node *base) {
         if(base == 0) {
             return;

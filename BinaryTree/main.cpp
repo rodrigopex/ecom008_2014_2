@@ -34,9 +34,11 @@ int main()
 //    n2->right = n6;
 
 //    n6->left = n7;
+    int h = root->height(root);
+    qDebug() << "Altura:" << h;
 
-    qDebug() << "Altura:" << root->height(root);
-    root->show(root);
+    qDebug() << qPrintable(root->toStringH(root, 0));
+//    root->show(root);
 
     return 0;
 }
